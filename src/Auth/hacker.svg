@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100" height="100">
+  <g>
+    <circle cx="100" cy="50" r="30" fill="#333" /> <!-- Head -->
+    <rect x="80" y="80" width="40" height="60" fill="#444" /> <!-- Body -->
+    <rect x="50" y="80" width="30" height="10" fill="#444" class="hands waving" /> <!-- Left Hand -->
+    <rect x="120" y="80" width="30" height="10" fill="#444" class="hands waving" /> <!-- Right Hand -->
+    <rect x="30" y="140" width="20" height="40" fill="#444" /> <!-- Left Leg -->
+    <rect x="150" y="140" width="20" height="40" fill="#444" /> <!-- Right Leg -->
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+.animated-phrase {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 0 5px #fff, 0 0 10px #00f, 0 0 15px #00f, 0 0 20px #00f, 0 0 25px #0ff, 0 0 30px #0ff;
+  transform: rotate(-15deg); /* Tilting effect */
+  opacity: 0.8;
+  animation: fly 10s linear infinite, glow 2s ease-in-out infinite;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(0, 0) rotate(-15deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(20vw, -10vh) rotate(-10deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(-20vw, 10vh) rotate(-20deg);
+    opacity: 0.2;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #00f, 0 0 15px #00f, 0 0 20px #00f, 0 0 25px #0ff, 0 0 30px #0ff;
+  }
+  50% {
+    text-shadow: 0 0 8px #fff, 0 0 15px #0ff, 0 0 20px #0ff, 0 0 25px #0ff, 0 0 35px #0ff, 0 0 40px #0ff;
+  }
+}
