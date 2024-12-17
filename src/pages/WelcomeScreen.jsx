@@ -7,26 +7,24 @@ import MainScreen from './MainScreen';
 
 const WelcomeScreen = () => {
     const navigate = useNavigate();
-    const { isLoggedIn, setIsLoggedIn } = useUserContext();
+    const { isOnboardingCompleted, setIsOnBoardingCompleted } = useUserContext();
 
     useEffect(() => {
-        const storedLoginStatus = localStorage.getItem('isLoggedIn');
+        const storedLoginStatus = localStorage.getItem('isOnboardingCompleted');
         if (storedLoginStatus === 'true') {
-            setIsLoggedIn(true);
+            setIsOnBoardingCompleted(true);
             navigate('/main');
         }
     }, []);
     
     const handleClick = () => {
         navigate('/login');
-        setIsLoggedIn(true);
-        setLocal('isLoggedIn', true);
+        setIsOnBoardingCompleted(true);
+        setLocal('isOnboardingCompleted', true);
     };
 
     return (
-        isLoggedIn ? (
-            <MainScreen/>
-        ) : (
+
             <div className='flex flex-col items-center justify-center h-screen'>
                 <img src="./src/assets/logo.png" alt="" />
                 <h1 className='text-4xl font-bold mb-4 underline'>Welcome to BroCode</h1>
@@ -34,6 +32,6 @@ const WelcomeScreen = () => {
                 <Button onClick={handleClick}>Get Started</Button>
             </div>
         )
-    );
+
 }
 export default WelcomeScreen

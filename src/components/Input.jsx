@@ -1,9 +1,11 @@
-export function Input({ placeholder, value, onChange,type }) {
+export function Input({ placeholder, value = '', onChange, type, name, className }) {
     return (
       <input
         type={type || 'text'}
         placeholder={placeholder}
         value={value}
+        name={name}
+        className={className}
         onChange={onChange}
         style={{
           border: '3px solid #000',
@@ -27,4 +29,3 @@ export function Input({ placeholder, value, onChange,type }) {
       />
     );
   }
-  
