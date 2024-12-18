@@ -47,7 +47,7 @@ function App() {
             />
             <Route 
               path="/main" 
-              element={<MainScreen user={user} />} 
+              element={user ? <MainScreen user={user} /> : <Navigate to="/login" />} 
             />
             <Route 
               path="/profile" 
@@ -59,7 +59,7 @@ function App() {
             />
             <Route 
               path="/" 
-              element={<Navigate to="/main" />} 
+              element={<Navigate to={user ? "/main" : "/login"} />} 
             />
           </Routes>
         </Router>

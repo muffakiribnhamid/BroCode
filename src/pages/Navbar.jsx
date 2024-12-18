@@ -34,7 +34,7 @@ const Navbar = ({ user }) => {
                         whileHover={{ scale: 1.05 }}
                     >
                         <img 
-                            src="/src/assets/logo.png" 
+                            src="/assets/logo.png" 
                             alt="BroCode Logo" 
                             className="h-8 w-auto cursor-pointer"
                             onClick={() => navigate('/main')}

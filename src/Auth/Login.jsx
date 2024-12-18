@@ -76,7 +76,7 @@ const Login = () => {
             <div className="bg-white p-8 rounded-lg border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] max-w-md w-full">
                 <div className="flex flex-col items-center mb-8">
                     <motion.img 
-                        src="/src/assets/logo.png" 
+                        src="/assets/logo.png" 
                         alt="BroCode Logo"
                         className="w-48 mb-6"
                         whileHover={{ scale: 1.05 }}
